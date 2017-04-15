@@ -1,0 +1,433 @@
+html,body
+{
+    height:100%;
+    width:100%;
+}
+
+.hero-image
+{
+    background-image: url("../images/home-office-336378_1920.jpg");
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode:overlay;
+}
+
+.hero-content 
+{
+    color:white;
+    margin-left:50%;
+    margin-top: 20%;
+    position:absolute;
+}
+
+.hero-content h1
+{
+    margin:0;
+    
+}
+/*  My customisation to bootstrap modules  */
+.hero-image #mainNav
+{
+    width:100%;
+    height:100px;
+    margin:0;
+    padding:0;
+    background-color: rgba(1,1,1,0.6);
+    position: fixed;
+}
+
+.hero-image #mainNav button
+{
+    margin:0px;
+    margin-right:3%;
+    margin-top:6%;
+    background-color: black;
+}
+
+.hero-image #mainNav button:hover
+{
+    background-color: rgba(56,106,247,0.6);
+}
+
+.hero-image #mainNav button span
+{
+    background-color: white;
+}
+
+#mainNav #myNavbar
+{
+    padding:0px;
+}
+
+#mainNav #myNavbar ul
+{
+    margin:0px;
+    margin-top:25px;
+    font-size: 18px;
+    /*border:2px solid black;*/
+    
+}
+
+#mainNav #myNavbar ul li
+{
+    /*border-right:2px solid black;*/
+    
+}
+#mainNav #myNavbar ul li a
+{
+    color:white;
+}
+
+#mainNav #myNavbar ul li a:hover
+{
+    background-color: rgba(56,106,247,0.6);
+}
+
+/*  Parallax Effect  */
+.parallax {
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode:overlay;
+    margin:0;
+    padding:0;
+    
+}
+
+#parallax1 {
+    background-image: url("../images/graphic-2127031_1920.jpg");
+}
+
+#parallax2 {
+    background-image: url("../images/quill-175980.png");
+}
+
+#parallax3
+{
+    background-image: url("../images/soup-1429806_1920.jpg");
+}
+
+#parallax4
+{
+    background-image: url("../images/running-573762_1920.jpg");
+}
+#parallax5
+{
+    background-image: url("../images/the-ball-488718_1920.jpg");
+}
+/******************************************************************************************************/
+
+/*********** blog cards*********************/
+
+#blogType
+{
+    width:90%;
+    height:100%;
+    margin-left:5%;
+    padding:100px;
+    
+}
+
+#blogType #cardContainer
+{
+    border:2px solid black;
+    padding:3%;
+
+    
+}
+
+.typeCards
+{
+    text-align: center;
+    list-style-type: none;
+    display:inline-block;
+    height:180px;
+    padding:0;
+    margin:1.5%;
+    width:20%;
+    background-color:white;
+    border:2px solid black;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5%;
+}
+
+
+.typeCards .iconContainer
+{
+    height:60px;
+    width:60px;
+    border:2px solid black;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:;
+    position:static;
+    padding:0px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+}
+.typeCards .iconContainer i
+{
+    font-size: 30px;
+    margin:10px;
+    transform: rotate(-45deg);
+    display:block;
+    
+    
+    /*margin-top:50%;*/
+    
+    
+   
+    
+}
+
+.typeCards p
+{
+    margin-left:3%;
+    margin-right:3%;
+    margin-top:20px;
+    font-size:20px;
+    font-weight:bold;
+    border:2px solid black;
+}
+
+.typeCards:hover
+{
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.4);
+}
+
+#tech:hover .iconContainer
+{
+    background-color: blue;
+    color:white;
+}
+
+#fashion:hover .iconContainer
+{
+    background-color: #c91173;
+    color:white;
+}
+
+
+#lifestyle:hover .iconContainer
+{
+    background-color:#9d4f00;
+    color:white;
+}
+
+#sports:hover .iconContainer
+{
+    background-color:darkgreen;
+    color:white;
+}
+
+#startup:hover .iconContainer
+{
+    background-color: #6218c3;
+    color:white;
+}
+
+#health:hover .iconContainer
+{
+    background-color: indianred;
+    color:white;
+}
+
+#fun:hover .iconContainer
+{
+    background-color: orange;
+    color:white;
+}
+
+#voice:hover .iconContainer
+{
+    background-color: dodgerblue;
+    color:white;
+}
+
+
+
+
+
+/******************************************************/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+     #mainNav #myNavbar ul
+{
+    margin:0px;
+    font-size: 18px;
+    border:2px solid black;
+    background-color: rgba(2,2,2,0.5);
+}
+    
+    #mainNav #myNavbar ul li
+    {
+        border-bottom:2px solid black;
+        text-align: center;
+    }
+    
+    .hero-content
+    {
+        
+        margin-top: 80%;
+        margin-left:50%;
+    }
+    
+    
+    .typeCards
+{
+    text-align: center;
+    list-style-type: none;
+    display:inline-block;
+    height:150px;
+    margin:1%;
+    width:30%;
+    background-color:white;
+    border:2px solid black;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5%;
+}
+
+.typeCards:hover
+{
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
+}
+
+
+    /************* blog cards**************/
+    
+    .typeCards p
+    {
+        font-size:20px;
+    }
+    
+}
+
+
+
+/************************************************************/
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+    #mainNav #myNavbar ul
+{
+    margin:0px;
+    font-size: 18px;
+    border:2px solid black;
+    background-color: rgba(2,2,2,0.5);
+}
+    
+    #mainNav #myNavbar ul li
+    {
+        border-bottom:2px solid black;
+        text-align: center;
+    }
+    
+    .hero-content
+    {
+        
+        margin-top: 80%;
+        margin-left:50%;
+    }
+    
+    
+    .typeCards
+{
+    text-align: center;
+    list-style-type: none;
+    display:inline-block;
+    height:150px;
+    margin:1%;
+    width:30%;
+    background-color:white;
+    border:2px solid black;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5%;
+}
+
+.typeCards:hover
+{
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
+}
+
+
+    /************* blog cards**************/
+    
+    .typeCards p
+    {
+        font-size:20px;
+    }
+    
+}
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+    
+     #mainNav #myNavbar ul
+{
+    margin:0px;
+    font-size: 18px;
+    border:2px solid black;
+    background-color: rgba(2,2,2,0.5);
+}
+    
+    #mainNav #myNavbar ul li
+    {
+        border-bottom:2px solid black;
+        text-align: center;
+    }
+    
+    .hero-content
+    {
+        
+        margin-top: 80%;
+        margin-left:50%;
+    }
+    
+    
+    .typeCards
+{
+    text-align: center;
+    list-style-type: none;
+    display:inline-block;
+    height:150px;
+    margin:1%;
+    width:30%;
+    background-color:white;
+    border:2px solid black;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5%;
+}
+
+.typeCards:hover
+{
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
+}
+
+
+    /************* blog cards**************/
+    
+    .typeCards p
+    {
+        font-size:20px;
+    }
+    
+
+    
+}
+
+}
